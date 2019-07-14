@@ -1,0 +1,29 @@
+@media screen and (max-width: 639px) {
+  .uk-button-default {
+    background-color: #fff !important;
+    color: #333;
+    border: 1px solid #e5e5e5;
+  }
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.bg {
+  /* The image used */
+  background-image: url('../img/background.jpg');
+
+  /* Full height */
+  height: 87%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.uk-card h3 {
+  color: #000000 !important;
+}
