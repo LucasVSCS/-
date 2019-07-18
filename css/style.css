@@ -27,3 +27,15 @@ html {
 .uk-card h3 {
   color: #000000 !important;
 }
+
+.uk-h1, h1 {
+	line-height: 1.5 !important;
+}
+
+#contact {
+	background: #444d55;
+}
+
+#footer {
+  background:#28313a !important;
+}
