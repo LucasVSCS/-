@@ -61,7 +61,7 @@
                             <a href="#projects" uk-scroll>PROJETOS</a>
                         </li>
                         <li class="uk-parent"><a href="#hobbys" uk-scroll>HOBBYS</a></li>
-                        <li class="uk-parent"><a href="#" uk-scroll>CONTATO</a></li>
+                        <li class="uk-parent"><a href="#contact" uk-scroll>CONTATO</a></li>
                     </ul>
                 </div>
             </nav>
@@ -105,7 +105,7 @@
                             uk-icon="star"></span>Hobbys</a>
                 </li>
                 <li>
-                    <a uk-toggle="target: #navSubItens" href="#" uk-scroll><span class="uk-margin-small-right"
+                    <a uk-toggle="target: #navSubItens" href="#contact" uk-scroll><span class="uk-margin-small-right"
                             uk-icon="mail"></span>Contato</a>
                 </li>
             </ul>
@@ -354,48 +354,99 @@
     </div>
     <!-- FIM SEÇÃO | PROJETOS-->
 
-    <!--
-    <div id="projects" class="uk-section uk-section-primary">
-        <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
-
-        </div>
-    </div>
-   -->
-    <div id="contact" class="uk-section uk-section-primary uk-section-xsmall uk-text-bold">
+    <!-- SEÇÃO | CONTATO -->
+    <div id="contact" class="uk-section uk-section-primary uk-section-xsmall uk-text-bold uk-text-center">
         <div class="uk-container">
-            <div class="uk-child-width-1-3@s" uk-grid>
+            <!-- CONTATO DESKTOP-->
+            <div class="uk-child-width-1-3@s uk-grid-small uk-visible@s uk-grid-divider" uk-grid>
                 <div class="uk-first-column">
-                    <span class="uk-margin-left" uk-icon="icon: mail; ratio:2"></span>
-                    <span>E-MAIL </span>
+                    <div class="uk-panel">
+                        <span class="uk-margin-right" uk-icon="icon: mail; ratio:2"></span>
+                        <span>E-MAIL </span>
+                    </div>
                 </div>
                 <div>
-                    <span class="uk-margin-left" uk-icon="icon: social; ratio:2"></span>
+                    <span class="uk-margin-right" uk-icon="icon: social; ratio:2"></span>
                     <span>REDES SOCIAIS</span>
                 </div>
                 <div>
-                    <span class="uk-margin-left" uk-icon="icon: receiver; ratio:2"></span>
+                    <span class="uk-margin-right" uk-icon="icon: receiver; ratio:2"></span>
                     <span>TELEFONE</span>
                 </div>
 
                 <div class="uk-first-column">
-                    <span>lucasvscs@outlook.com</span>
+                    <div>
+                        <a href="mailto:lucasvscs@outlook.com">lucasvscs@outlook.com</a>
+                    </div>
                 </div>
                 <div>
-                    <span class="uk-margin-right" uk-icon="icon: github; ratio:1.5"></span>
-                    <span class="uk-margin-left" uk-icon="icon: linkedin; ratio:1.5"></span>
-                    <span class="uk-margin-left" uk-icon="icon: whatsapp; ratio:1.5"></span>
-                    <span class="uk-margin-left" uk-icon="icon: instagram; ratio:1.5"></span>
 
+                    <a href="https://github.com/LucasVSCS">
+                        <span class="uk-margin-left" uk-icon="icon: github; ratio:1.2"></span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/lucasvscs/">
+                        <span class="uk-margin-left" uk-icon="icon: linkedin; ratio:1.2"></span>
+                    </a>
 
+                    <span class="uk-margin-left" uk-icon="icon: whatsapp; ratio:1.2"></span>
+
+                    <a href="https://www.instagram.com/lucasvscs/">
+                        <span class="uk-margin-left" uk-icon="icon: instagram; ratio:1.2"></span>
+                    </a>
                 </div>
                 <div>
-                    <span>(71) 99999-9999</span>
+                    <span>(71) 9999-9999</span>
+                </div>
+            </div>
+            <!-- FIM CONTATO DESKTOP-->
+
+            <!-- ================================================================================================================================================================================= -->
+
+            <!--  CONTATO MOBILE    -->
+            <div class="uk-child-width-1-3@s uk-grid-small uk-hidden@s uk-grid-divider" uk-grid>
+                <div class="uk-first-column uk-margin-right">
+                    <diV>
+                        <span uk-icon="icon: mail; ratio:2"></span>
+                        <span>E-MAIL </span>
+                    </div>
                 </div>
 
+                <div>
+                    <a href="mailto:lucasvscs@outlook.com">lucasvscs@outlook.com</a>
+                </div>
+
+                <div>
+                    <span uk-icon="icon: social; ratio:2"></span>
+                    <span>REDES SOCIAIS</span>
+                </div>
+
+                <div>
+                    <a href="https://github.com/LucasVSCS">
+                        <span class="uk-margin-left" uk-icon="icon: github; ratio:1.2"></span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/lucasvscs/">
+                        <span class="uk-margin-left" uk-icon="icon: linkedin; ratio:1.2"></span>
+                    </a>
+                    <a href="#">
+                        <span class="uk-margin-left" uk-icon="icon: whatsapp; ratio:1.2"></span>
+                    </a>
+                    <a href="https://www.instagram.com/lucasvscs/">
+                        <span class="uk-margin-left" uk-icon="icon: instagram; ratio:1.2"></span>
+                    </a>
+                </div>
+
+                <div>
+                    <span uk-icon="icon: receiver; ratio:2"></span>
+                    <span>TELEFONE</span>
+                </div>
+                <div>
+                    <span>(71) 9999-9999</span>
+                </div>
+                <!-- FIM CONTATO MOBILE-->
             </div>
         </div>
     </div>
-
+    <!-- FIM SEÇÃO | CONTATO -->
 
     <footer>
         <div id="footer" class="uk-section uk-section-primary uk-section-xsmall uk-text-bold">
