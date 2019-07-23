@@ -36,6 +36,9 @@
 </head>
 
 <body>
+    <a href="#header" uk-scroll><span title="Voltar ao topo" id="scrollTop"
+            uk-icon="icon: chevron-up; ratio: 1.4"></span></a>
+
     <!-- MENU DESKTOP-->
     <div
         uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-dark">
@@ -60,7 +63,9 @@
                         <li class="uk-parent">
                             <a href="#projects" uk-scroll>PROJETOS</a>
                         </li>
+                        <!-- 
                         <li class="uk-parent"><a href="#hobbys" uk-scroll>HOBBYS</a></li>
+                        -->
                         <li class="uk-parent"><a href="#contact" uk-scroll>CONTATO</a></li>
                     </ul>
                 </div>
@@ -100,10 +105,12 @@
                     <a uk-toggle="target: #navSubItens" href="#projects" uk-scroll><span class="uk-margin-small-right"
                             uk-icon="git-branch"></span>Projetos</a>
                 </li>
+                <!--
                 <li>
                     <a uk-toggle="target: #navSubItens" href="#" uk-scroll><span class="uk-margin-small-right"
                             uk-icon="star"></span>Hobbys</a>
                 </li>
+                -->
                 <li>
                     <a uk-toggle="target: #navSubItens" href="#contact" uk-scroll><span class="uk-margin-small-right"
                             uk-icon="mail"></span>Contato</a>
@@ -167,9 +174,9 @@
                         <h3 class="uk-card-title uk-text-center">HTML5</h3>
                         <img class="uk-align-center" data-src="img/htmlLogo.png" width="150" height="" alt="" uk-img />
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem
-                            ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum
-                            dolor sit amet, consectetur adipisicing elit.
+                            Desenvolvimento de interfaces responsivas utilizando templates ou do zero com frameworks
+                            CSS. Interfaces essas que podem ser tanto para
+                            sistemas quanto para sites instituicionais.
                         </p>
                     </div>
                 </div>
@@ -179,9 +186,8 @@
                         <h3 class="uk-card-title uk-text-center">CSS3</h3>
                         <img class="uk-align-center" data-src="img/cssLogo.png" width="150" height="" alt="" uk-img />
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem
-                            ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum
-                            dolor sit amet, consectetur adipisicing elit.
+                            Experiência e capacidade de desenvolver soluções atrativas e de fácil usabilidade para o
+                            usuário final utilizando diversos tipos de frameworks conhecidos no mercado
                         </p>
                     </div>
                 </div>
@@ -192,9 +198,8 @@
                         <img class="uk-align-center" data-src="img/javascriptLogo.png" width="150" height="" alt=""
                             uk-img />
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem
-                            ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum
-                            dolor sit amet, consectetur adipisicing elit.
+                            Aprimoramento da interatividade com usuário utilizando eventos JavaScript ou manipulando o
+                            DOM com JQUERY e suas requisições dinâmicas com AJAX.
                         </p>
                     </div>
                 </div>
@@ -204,9 +209,8 @@
                         <h3 class="uk-card-title uk-text-center">PHP 7</h3>
                         <img class="uk-align-center" data-src="img/phpLogo.png" width="150" height="" alt="" uk-img />
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem
-                            ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum
-                            dolor sit amet, consectetur adipisicing elit.
+                            Minha linguagem nativa principal no desenvolvimento Back-end utilizando do padrão de
+                            arquitetura MVC.
                         </p>
                     </div>
                 </div>
@@ -459,6 +463,7 @@
     </footer>
 
     <!-- JAVASCRIPT DA MAIN-->
+
     <script src="js/main.js"></script>
 </body>
 
