@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143522936-2"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-143522936-2"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-        gtag('config', 'UA-143522936-2');
+      gtag('config', 'UA-143522936-2');
     </script>
     <!-- Google Analytics -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>VSCS | Dev. Full-Stack Júnior</title>
+    <title>VSCS | Dev. Full-Stack</title>
     <link rel="shortcut icon" href="img/vscsLogo.ico" type="image/x-icon" />
 
     <!-- MAIN CSS-->
@@ -27,442 +29,629 @@
     <script src="js/main.js"></script>
 
     <!-- UIkit CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/css/uikit.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/css/uikit.min.css"
+    />
 
     <!-- UIkit JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/js/uikit-icons.min.js"></script>
+  </head>
 
-</head>
-
-<body>
-    <a href="#header" uk-scroll><span title="Voltar ao topo" id="scrollTop"
-            uk-icon="icon: chevron-up; ratio: 1.4"></span></a>
+  <body>
+    <a href="#header" uk-scroll
+      ><span
+        title="Voltar ao topo"
+        id="scrollTop"
+        uk-icon="icon: chevron-up; ratio: 1.4"
+      ></span
+    ></a>
 
     <!-- MENU DESKTOP-->
-    <div id="navDesktop"
-        uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-dark">
-        <div class="uk-container uk-visible@s">
-            <nav class="uk-navbar-container" uk-navbar>
-                <div class="uk-navbar-left">
-                    <ul class="uk-navbar-nav">
-                        <a href="#header" uk-scroll><img class="uk-logo" data-src="img/vscsLogo.png" width="70"
-                                height="" alt="VSCS LOGO" uk-img /></a>
-                    </ul>
-                </div>
+    <div
+      id="navDesktop"
+      uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-dark"
+    >
+      <div class="uk-container uk-visible@s">
+        <nav class="uk-navbar-container" uk-navbar>
+          <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+              <a href="#header" uk-scroll
+                ><img
+                  class="uk-logo"
+                  data-src="img/vscsLogo.png"
+                  width="70"
+                  height=""
+                  alt="VSCS LOGO"
+                  uk-img
+              /></a>
+            </ul>
+          </div>
 
-                <div class="uk-navbar-right">
-                    <ul class="uk-navbar-nav" uk-scrollspy-nav="closest: li; scroll: true">
-                        <li class="uk-parent"><a href="#header" uk-scroll>INICIO</a></li>
-                        <li class="uk-parent">
-                            <a href="#about" uk-scroll>SOBRE MIM</a>
-                        </li>
-                        <li class="uk-parent">
-                            <a href="#knowledge" uk-scroll>CONHECIMENTOS</a>
-                        </li>
-                        <li class="uk-parent">
-                            <a href="#projects" uk-scroll>PROJETOS</a>
-                        </li>
-                        <!-- 
+          <div class="uk-navbar-right">
+            <ul
+              class="uk-navbar-nav"
+              uk-scrollspy-nav="closest: li; scroll: true"
+            >
+              <li class="uk-parent"><a href="#header" uk-scroll>INICIO</a></li>
+              <li class="uk-parent">
+                <a href="#about" uk-scroll>SOBRE MIM</a>
+              </li>
+              <li class="uk-parent">
+                <a href="#knowledge" uk-scroll>CONHECIMENTOS</a>
+              </li>
+              <li class="uk-parent">
+                <a href="#projects" uk-scroll>PROJETOS</a>
+              </li>
+              <!-- 
                         <li class="uk-parent"><a href="#hobbys" uk-scroll>HOBBYS</a></li>
                         -->
-                        <li class="uk-parent"><a href="#contact" uk-scroll>CONTATO</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+              <li class="uk-parent">
+                <a href="#contact" uk-scroll>CONTATO</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </div>
     <!-- FIM MENU DESKTOP-->
 
     <!-- MENU MOBILE-->
     <div id="navMobile">
-        <div
-            uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-dark">
-            <button class="uk-button uk-button-default uk-margin-small-right uk-width-1-1 uk-hidden@s" type="button"
-                uk-toggle="target: #navSubItens">
-                <img class="uk-logo uk-position-left" data-src="img/vscsLogo.png" width="40" height="" alt="VSCS LOGO"
-                    uk-img />
-                <span class="uk-text-emphasis uk-text-center">MENU <span class="uk-margin-small-right"
-                        uk-icon="menu"></span></span>
-            </button>
-            <ul id="navSubItens"
-                class="uk-nav-default uk-nav-center uk-nav-parent-icon uk-background-muted uk-animation-fast uk-animation-scale-up uk-transform-origin-top-center"
-                tabindex="0" uk-nav hidden>
-                <li>
-                    <a uk-toggle="target: #navSubItens" href="#header" uk-scroll><span class="uk-margin-small-right"
-                            uk-icon="home"></span>Inicio</a>
-                </li>
-                <li>
-                    <a uk-toggle="target: #navSubItens" href="#about" uk-scroll><span class="uk-margin-small-right"
-                            uk-icon="user"></span>Sobre
-                        mim</a>
-                </li>
-                <li>
-                    <a uk-toggle="target: #navSubItens" href="#knowledge" uk-scroll><span class="uk-margin-small-right"
-                            uk-icon="code"></span>Conhecimentos</a>
-                </li>
-                <li>
-                    <a uk-toggle="target: #navSubItens" href="#projects" uk-scroll><span class="uk-margin-small-right"
-                            uk-icon="git-branch"></span>Projetos</a>
-                </li>
-                <!--
+      <div
+        uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-dark"
+      >
+        <button
+          class="uk-button uk-button-default uk-margin-small-right uk-width-1-1 uk-hidden@s"
+          type="button"
+          uk-toggle="target: #navSubItens"
+        >
+          <img
+            class="uk-logo uk-position-left"
+            data-src="img/vscsLogo.png"
+            width="40"
+            height=""
+            alt="VSCS LOGO"
+            uk-img
+          />
+          <span class="uk-text-emphasis uk-text-center"
+            >MENU <span class="uk-margin-small-right" uk-icon="menu"></span
+          ></span>
+        </button>
+        <ul
+          id="navSubItens"
+          class="uk-nav-default uk-nav-center uk-nav-parent-icon uk-background-muted uk-animation-fast uk-animation-scale-up uk-transform-origin-top-center"
+          tabindex="0"
+          uk-nav
+          hidden
+        >
+          <li>
+            <a uk-toggle="target: #navSubItens" href="#header" uk-scroll
+              ><span class="uk-margin-small-right" uk-icon="home"></span
+              >Inicio</a
+            >
+          </li>
+          <li>
+            <a uk-toggle="target: #navSubItens" href="#about" uk-scroll
+              ><span class="uk-margin-small-right" uk-icon="user"></span>Sobre
+              mim</a
+            >
+          </li>
+          <li>
+            <a uk-toggle="target: #navSubItens" href="#knowledge" uk-scroll
+              ><span class="uk-margin-small-right" uk-icon="code"></span
+              >Conhecimentos</a
+            >
+          </li>
+          <li>
+            <a uk-toggle="target: #navSubItens" href="#projects" uk-scroll
+              ><span class="uk-margin-small-right" uk-icon="git-branch"></span
+              >Projetos</a
+            >
+          </li>
+          <!--
                 <li>
                     <a uk-toggle="target: #navSubItens" href="#" uk-scroll><span class="uk-margin-small-right"
                             uk-icon="star"></span>Hobbys</a>
                 </li>
                 -->
-                <li>
-                    <a uk-toggle="target: #navSubItens" href="#contact" uk-scroll><span class="uk-margin-small-right"
-                            uk-icon="mail"></span>Contato</a>
-                </li>
-            </ul>
-        </div>
+          <li>
+            <a uk-toggle="target: #navSubItens" href="#contact" uk-scroll
+              ><span class="uk-margin-small-right" uk-icon="mail"></span
+              >Contato</a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
     <!-- FIM MENU MOBILE-->
 
     <!-- BACKGROUND LANDING PAGE-->
-    <div id="header" class="bg uk-background-fixed uk-flex uk-flex-center uk-flex-middle uk-inline">
-        <div class="uk-overlay uk-overlay-default uk-position-center">
-            <h1>Lucas VSCS | Desenvolvedor Full-Stack Júnior</h1>
+    <div
+      id="header"
+      class="bg uk-background-fixed uk-flex uk-flex-center uk-flex-middle uk-inline"
+    >
+      <div class="uk-overlay uk-overlay-default uk-position-center">
+        <h1>Lucas VSCS | Desenvolvedor Full-Stack</h1>
+      </div>
+      <a href="#about" uk-scroll>
+        <div class="uk-position-bottom-center uk-light">
+          <h2>Navegar entre as seções</h2>
+          <span
+            uk-icon="ratio: 3; icon: chevron-down"
+            class="uk-icon uk-light uk-flex uk-flex-center"
+          ></span>
         </div>
-        <a href="#about" uk-scroll>
-            <div class="uk-position-bottom-center uk-light">
-                <h2>Navegar entre as seções</h2>
-                <span uk-icon="ratio: 3; icon: chevron-down" class="uk-icon uk-light uk-flex uk-flex-center"></span>
-            </div>
-        </a>
+      </a>
     </div>
     <!-- FIM BACKGROUND LANDING PAGE-->
 
     <!-- SEÇÃO | SOBRE MIM-->
     <div id="about" class="uk-section uk-section-muted">
-        <h1 class="uk-heading-line uk-text-center"><span>Sobre mim</span></h1>
-        <div class="uk-container">
-            <div uk-scrollspy="cls: uk-animation-slide-left; repeat: false">
-                <img class="uk-align-left" src="img/personalPhoto.jpg" width="270" height="250" alt="Foto pessoal" />
-            </div>
-            <span class="uk-text-top uk-text-large uk-text-bold">Quem é VSCS</span>
-            <p class="uk-text-break uk-text-left uk-margin">
-                Meu nome é Lucas, possuo 20 anos e moro em Salvador, na Bahia.
-            </p>
-            <p class="uk-text-break uk-text-left uk-margin">
-                Sou Desenvolvedor Web, possuo experiências em projetos pessoais no
-                padrão de desenvolvimento orientado a objetos e de arquitetura MVC.
-            </p>
-            <p class="uk-text-break uk-text-left uk-margin">
-                Autodidata, também busco entender os padrões e boas práticas presentes
-                no mercado, além das suas novas tecnologias. Sou criativo,
-                descontraído e possuo imensa vontade de aprender.
-            </p>
-
-            <p class="uk-text-break uk-text-left uk-margin">
-                A sigla VSCS adotada por mim é um acrônimo a meus sobrenomes, VSCS:
-                Vinicius Silva Cerqueira de Souza.
-            </p>
+      <h1 class="uk-heading-line uk-text-center"><span>Sobre mim</span></h1>
+      <div class="uk-container">
+        <div uk-scrollspy="cls: uk-animation-slide-left; repeat: false">
+          <img
+            class="uk-align-left"
+            src="img/personalPhoto.jpg"
+            width="270"
+            height="250"
+            alt="Foto pessoal"
+          />
         </div>
+        <span class="uk-text-top uk-text-large uk-text-bold">Quem é VSCS</span>
+        <p class="uk-text-break uk-text-left uk-margin">
+          Meu nome é Lucas, possuo 20 anos e moro em Salvador, na Bahia.
+        </p>
+        <p class="uk-text-break uk-text-left uk-margin">
+          Sou Desenvolvedor Web, possuo experiências em projetos pessoais no
+          padrão de desenvolvimento orientado a objetos e de arquitetura MVC.
+        </p>
+        <p class="uk-text-break uk-text-left uk-margin">
+          Autodidata, também busco entender os padrões e boas práticas presentes
+          no mercado, além das suas novas tecnologias. Sou criativo,
+          descontraído e possuo imensa vontade de aprender.
+        </p>
+
+        <p class="uk-text-break uk-text-left uk-margin">
+          A sigla VSCS adotada por mim é um acrônimo a meus sobrenomes, VSCS:
+          Vinicius Silva Cerqueira de Souza.
+        </p>
+      </div>
     </div>
     <!-- FIM SEÇÃO | SOBRE MIM-->
 
     <!-- SEÇÃO | CONHECIMENTOS-->
     <div id="knowledge" class="uk-section uk-section-secondary">
-        <h1 class="uk-heading-line uk-text-center"><span>Conhecimentos</span></h1>
-        <div class="uk-container">
-            <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match"
-                uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500" uk-grid>
-                <div>
-                    <div class="uk-card uk-card-default uk-card-body">
-                        <h3 class="uk-card-title uk-text-center">HTML5</h3>
-                        <img class="uk-align-center" data-src="img/htmlLogo.png" width="150" height="" alt="" uk-img />
-                        <p>
-                            Desenvolvimento de interfaces responsivas utilizando templates ou do zero com frameworks
-                            CSS. Interfaces essas que podem ser tanto para
-                            sistemas quanto para sites instituicionais.
-                        </p>
-                    </div>
-                </div>
-
-                <div>
-                    <div class="uk-card uk-card-default uk-card-body">
-                        <h3 class="uk-card-title uk-text-center">CSS3</h3>
-                        <img class="uk-align-center" data-src="img/cssLogo.png" width="150" height="" alt="" uk-img />
-                        <p>
-                            Experiência e capacidade de desenvolver soluções atrativas e de fácil usabilidade para o
-                            usuário final utilizando diversos tipos de frameworks conhecidos no mercado
-                        </p>
-                    </div>
-                </div>
-
-                <div>
-                    <div class="uk-card uk-card-default uk-card-body">
-                        <h3 class="uk-card-title uk-text-center">JavaScript</h3>
-                        <img class="uk-align-center" data-src="img/javascriptLogo.png" width="150" height="" alt=""
-                            uk-img />
-                        <p>
-                            Aprimoramento da interatividade com usuário utilizando eventos JavaScript ou manipulando o
-                            DOM com JQUERY e suas requisições dinâmicas com AJAX.
-                        </p>
-                    </div>
-                </div>
-
-                <div>
-                    <div class="uk-card uk-card-default uk-card-body">
-                        <h3 class="uk-card-title uk-text-center">PHP 7</h3>
-                        <img class="uk-align-center" data-src="img/phpLogo.png" width="150" height="" alt="" uk-img />
-                        <p>
-                            Principal Linguagem nativa Back-end utilizada por mim no desenvolvimento de soluções no
-                            padrão de arquitetura MVC.
-                        </p>
-                    </div>
-                </div>
-
-                <div>
-                    <div class="uk-card uk-card-default uk-card-body">
-                        <h3 class="uk-card-title uk-text-center">Laravel</h3>
-                        <img class="uk-align-center" data-src="img/laravelLogo.png" width="150" height="" alt=""
-                            uk-img />
-                        <p>
-                            Garantia de segurança, praticidade e confiabilidade utilizando um dos maiores frameworks PHP
-                            do mercado.
-                        </p>
-                    </div>
-                </div>
-
-                <div>
-                    <div class="uk-card uk-card-default uk-card-body">
-                        <h3 class="uk-card-title uk-text-center">MySQL</h3>
-                        <img class="uk-align-center" data-src="img/mysqlLogo.png" width="150" height="" alt="" uk-img />
-                        <p>
-                            Desenvolvimento, normalização e integração de bancos de dados MySQL locais e em produção
-                            utilizando o MySQL Workbench e o PHPMyAdmin.
-                        </p>
-                    </div>
-                </div>
+      <h1 class="uk-heading-line uk-text-center"><span>Conhecimentos</span></h1>
+      <div class="uk-container">
+        <div
+          class="uk-child-width-1-3@m uk-grid-small uk-grid-match"
+          uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500"
+          uk-grid
+        >
+          <div>
+            <div class="uk-card uk-card-default uk-card-body">
+              <h3 class="uk-card-title uk-text-center">HTML5</h3>
+              <img
+                class="uk-align-center"
+                data-src="img/htmlLogo.png"
+                width="150"
+                height=""
+                alt=""
+                uk-img
+              />
+              <p>
+                Desenvolvimento de interfaces responsivas utilizando templates
+                ou do zero com frameworks CSS. Interfaces essas que podem ser
+                tanto para sistemas quanto para sites instituicionais.
+              </p>
             </div>
-        </div>
-        <h3 class="uk-heading-line uk-text-center"><span>Entre outros</span></h3>
+          </div>
 
-        <div class="uk-container">
-            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
-                <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid">
-                    <li>
-                        <div class="uk-panel">
-                            <img src="img/bootstrapLogo.png" alt="" />
-                            <div class="uk-position-center uk-panel"></div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="uk-panel">
-                            <img src="img/materializeLogo.PNG" alt="" />
-                            <div class="uk-position-center uk-panel"></div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="uk-panel">
-                            <img src="img/uikitLogo.png" alt="" />
-                            <div class="uk-position-center uk-panel"></div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="uk-panel">
-                            <img src="img/gitLogo.png" alt="" />
-                            <div class="uk-position-center uk-panel"></div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="uk-panel">
-                            <img src="img/javaLogo.png" alt="" />
-                            <div class="uk-position-center uk-panel"></div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="uk-panel">
-                            <img src="img/jqueryLogo.png" alt="" />
-                            <div class="uk-position-center uk-panel"></div>
-                        </div>
-                    </li>
-                </ul>
-
-                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
-                    uk-slider-item="previous"></a>
-                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
-                    uk-slider-item="next"></a>
+          <div>
+            <div class="uk-card uk-card-default uk-card-body">
+              <h3 class="uk-card-title uk-text-center">CSS3</h3>
+              <img
+                class="uk-align-center"
+                data-src="img/cssLogo.png"
+                width="150"
+                height=""
+                alt=""
+                uk-img
+              />
+              <p>
+                Experiência e capacidade de desenvolver soluções atrativas e de
+                fácil usabilidade para o usuário final utilizando diversos tipos
+                de frameworks conhecidos no mercado
+              </p>
             </div>
+          </div>
+
+          <div>
+            <div class="uk-card uk-card-default uk-card-body">
+              <h3 class="uk-card-title uk-text-center">JavaScript</h3>
+              <img
+                class="uk-align-center"
+                data-src="img/javascriptLogo.png"
+                width="150"
+                height=""
+                alt=""
+                uk-img
+              />
+              <p>
+                Aprimoramento da interatividade com usuário utilizando eventos
+                JavaScript ou manipulando o DOM com JQUERY e suas requisições
+                dinâmicas com AJAX.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <div class="uk-card uk-card-default uk-card-body">
+              <h3 class="uk-card-title uk-text-center">PHP 7</h3>
+              <img
+                class="uk-align-center"
+                data-src="img/phpLogo.png"
+                width="150"
+                height=""
+                alt=""
+                uk-img
+              />
+              <p>
+                Principal Linguagem nativa Back-end utilizada por mim no
+                desenvolvimento de soluções no padrão de arquitetura MVC.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <div class="uk-card uk-card-default uk-card-body">
+              <h3 class="uk-card-title uk-text-center">Laravel</h3>
+              <img
+                class="uk-align-center"
+                data-src="img/laravelLogo.png"
+                width="150"
+                height=""
+                alt=""
+                uk-img
+              />
+              <p>
+                Garantia de segurança, praticidade e confiabilidade utilizando
+                um dos maiores frameworks PHP do mercado.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <div class="uk-card uk-card-default uk-card-body">
+              <h3 class="uk-card-title uk-text-center">MySQL</h3>
+              <img
+                class="uk-align-center"
+                data-src="img/mysqlLogo.png"
+                width="150"
+                height=""
+                alt=""
+                uk-img
+              />
+              <p>
+                Desenvolvimento, normalização e integração de bancos de dados
+                MySQL locais e em produção utilizando o MySQL Workbench e o
+                PHPMyAdmin.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
+      <h3 class="uk-heading-line uk-text-center"><span>Entre outros</span></h3>
+
+      <div class="uk-container">
+        <div
+          class="uk-position-relative uk-visible-toggle uk-light"
+          tabindex="-1"
+          uk-slider
+        >
+          <ul
+            class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid"
+          >
+            <li>
+              <div class="uk-panel">
+                <img src="img/bootstrapLogo.png" alt="" />
+                <div class="uk-position-center uk-panel"></div>
+              </div>
+            </li>
+
+            <li>
+              <div class="uk-panel">
+                <img src="img/materializeLogo.PNG" alt="" />
+                <div class="uk-position-center uk-panel"></div>
+              </div>
+            </li>
+
+            <li>
+              <div class="uk-panel">
+                <img src="img/uikitLogo.png" alt="" />
+                <div class="uk-position-center uk-panel"></div>
+              </div>
+            </li>
+
+            <li>
+              <div class="uk-panel">
+                <img src="img/gitLogo.png" alt="" />
+                <div class="uk-position-center uk-panel"></div>
+              </div>
+            </li>
+
+            <li>
+              <div class="uk-panel">
+                <img src="img/javaLogo.png" alt="" />
+                <div class="uk-position-center uk-panel"></div>
+              </div>
+            </li>
+
+            <li>
+              <div class="uk-panel">
+                <img src="img/jqueryLogo.png" alt="" />
+                <div class="uk-position-center uk-panel"></div>
+              </div>
+            </li>
+          </ul>
+
+          <a
+            class="uk-position-center-left uk-position-small uk-hidden-hover"
+            href="#"
+            uk-slidenav-previous
+            uk-slider-item="previous"
+          ></a>
+          <a
+            class="uk-position-center-right uk-position-small uk-hidden-hover"
+            href="#"
+            uk-slidenav-next
+            uk-slider-item="next"
+          ></a>
+        </div>
+      </div>
     </div>
     <!-- FIM SEÇÃO | CONHECIMENTOS-->
 
     <!-- SEÇÃO | PROJETOS-->
     <div id="projects" class="uk-section uk-section-muted">
-        <h1 class="uk-heading-line uk-text-center"><span>Projetos</span></h1>
-        <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
-            <div class="uk-text-center">
-                <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
-                    <img src="img/muniz-1.png" alt="" />
-                    <div
-                        class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
-                        <p class="uk-h4 uk-margin-remove">
-                            Website de catálogo de produtos onde os pedidos de orçamento
-                            realizados pelos clientes são administrados pelos funcionários
-                            da MUNIZ através do seu painel gerenciador.
-                        </p>
-                    </div>
-                </div>
-                <a href="https://munizmanutencaodemaquinas.com.br/">
-                    <p class="uk-margin-small-top">Web site de vendas MUNIZ</p>
-                </a>
+      <h1 class="uk-heading-line uk-text-center"><span>Projetos</span></h1>
+      <div
+        class="uk-grid-collapse uk-child-width-expand@s uk-text-center"
+        uk-grid
+      >
+        <div class="uk-text-center">
+          <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+            <img src="img/muniz-1.png" alt="" />
+            <div
+              class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle"
+            >
+              <p class="uk-h4 uk-margin-remove">
+                Website de catálogo de produtos onde os pedidos de orçamento
+                realizados pelos clientes são administrados pelos funcionários
+                da MUNIZ através do seu painel gerenciador.
+              </p>
             </div>
-
-            <div class="uk-text-center">
-                <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
-                    <img src="img/muniz-2.png" alt="" />
-                    <div
-                        class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
-                        <p class="uk-h4 uk-margin-remove">
-                            Painel Gerenciador do Website de vendas da empresa MUNIZ, neste
-                            sistema são manipulados clientes, pedidos, produtos,
-                            funcionários e fornecedores. O sistema também conta com API de
-                            dólar, de consulta de CNPJ, manuais e emissão de relatórios em
-                            PDF.
-                        </p>
-                    </div>
-                </div>
-                <a href="http://painel.munizmanutencaodemaquinas.com.br/">
-                    <p class="uk-margin-small-top">Painel Gerenciador MUNIZ</p>
-                </a>
-            </div>
-
-            <div class="uk-text-center">
-                <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
-                    <img src="img/flor-de-seda.png" alt="" />
-                    <div
-                        class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
-                        <p class="uk-h4 uk-margin-remove">
-                            Painel Gerenciador da empresa fictícia Flor de Seda. Neste
-                            sistema são manipulados pedidos, produtos, funcionários e
-                            clientes.
-                        </p>
-                    </div>
-                </div>
-                <a href="https://flor-de-seda.herokuapp.com/">
-                    <p class="uk-margin-small-top">Painel Gerenciador Flor de Seda</p>
-                </a>
-            </div>
+          </div>
+          <p class="uk-margin-small-top uk-text-bold">
+            Web site de vendas MUNIZ
+          </p>
         </div>
+
+        <div class="uk-text-center">
+          <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+            <img src="img/muniz-2.png" alt="" />
+            <div
+              class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle"
+            >
+              <p class="uk-h4 uk-margin-remove">
+                Painel Gerenciador do Website de vendas da empresa MUNIZ, neste
+                sistema são manipulados clientes, pedidos, produtos,
+                funcionários e fornecedores. O sistema também conta com API de
+                dólar, de consulta de CNPJ, manuais e emissão de relatórios em
+                PDF.
+              </p>
+            </div>
+          </div>
+
+          <p class="uk-margin-small-top uk-text-bold">
+            Painel Gerenciador MUNIZ
+          </p>
+        </div>
+
+        <div class="uk-text-center">
+          <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+            <img src="img/flor-de-seda.png" alt="" />
+            <div
+              class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle"
+            >
+              <p class="uk-h4 uk-margin-remove">
+                Painel Gerenciador da empresa fictícia Flor de Seda. Neste
+                sistema são manipulados pedidos, produtos, funcionários e
+                clientes.
+              </p>
+            </div>
+          </div>
+
+          <p class="uk-margin-small-top uk-text-bold">
+            Painel Gerenciador Flor de Seda
+          </p>
+        </div>
+
+        <div class="uk-text-center">
+          <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+            <img src="img/sorteador-value.png" alt="" />
+            <div
+              class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle"
+            >
+              <p class="uk-h4 uk-margin-remove">
+                Sistema de sorteios de instagram utilizando a API GraphQL da
+                plataforma com geração de planilhas de comentários, painel de
+                gerenciamento de planos, usuários e patrocinadores.
+              </p>
+            </div>
+          </div>
+
+          <p class="uk-margin-small-top uk-text-bold">
+            Sistema de sorteios de Instagram Value Agência
+          </p>
+        </div>
+      </div>
     </div>
     <!-- FIM SEÇÃO | PROJETOS-->
 
     <!-- SEÇÃO | CONTATO -->
-    <div id="contact" class="uk-section uk-section-primary uk-section-xsmall uk-text-bold uk-text-center">
-        <div class="uk-container">
-            <!-- CONTATO DESKTOP-->
-            <div class="uk-child-width-1-3@s uk-grid-small uk-visible@s uk-grid-divider" uk-grid>
-                <div class="uk-first-column">
-                    <div class="uk-panel">
-                        <span class="uk-margin-right" uk-icon="icon: mail; ratio:2"></span>
-                        <span>E-MAIL </span>
-                    </div>
-                </div>
-                <div>
-                    <span class="uk-margin-right" uk-icon="icon: social; ratio:2"></span>
-                    <span>REDES SOCIAIS</span>
-                </div>
-                <div>
-                    <span class="uk-margin-right" uk-icon="icon: receiver; ratio:2"></span>
-                    <span>TELEFONE</span>
-                </div>
-
-                <div class="uk-first-column">
-                    <div>
-                        <a href="mailto:lucasvscs@outlook.com">lucasvscs@outlook.com</a>
-                    </div>
-                </div>
-                <div>
-
-                    <a href="https://github.com/LucasVSCS">
-                        <span class="uk-margin-left" uk-icon="icon: github; ratio:1.2"></span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/lucasvscs/">
-                        <span class="uk-margin-left" uk-icon="icon: linkedin; ratio:1.2"></span>
-                    </a>
-
-                    <span class="uk-margin-left" uk-icon="icon: whatsapp; ratio:1.2"></span>
-
-                    <a href="https://www.instagram.com/lucasvscs/">
-                        <span class="uk-margin-left" uk-icon="icon: instagram; ratio:1.2"></span>
-                    </a>
-                </div>
-                <div>
-                    <span>(71) 9999-9999</span>
-                </div>
+    <div
+      id="contact"
+      class="uk-section uk-section-primary uk-section-xsmall uk-text-bold uk-text-center"
+    >
+      <div class="uk-container">
+        <!-- CONTATO DESKTOP-->
+        <div
+          class="uk-child-width-1-3@s uk-grid-small uk-visible@s uk-grid-divider"
+          uk-grid
+        >
+          <div class="uk-first-column">
+            <div class="uk-panel">
+              <span
+                class="uk-margin-right"
+                uk-icon="icon: mail; ratio:2"
+              ></span>
+              <span>E-MAIL </span>
             </div>
-            <!-- FIM CONTATO DESKTOP-->
+          </div>
+          <div>
+            <span
+              class="uk-margin-right"
+              uk-icon="icon: social; ratio:2"
+            ></span>
+            <span>REDES SOCIAIS</span>
+          </div>
+          <div>
+            <span
+              class="uk-margin-right"
+              uk-icon="icon: receiver; ratio:2"
+            ></span>
+            <span>TELEFONE</span>
+          </div>
 
-            <!-- ================================================================================================================================================================================= -->
-
-            <!--  CONTATO MOBILE    -->
-            <div class="uk-child-width-1-3@s uk-grid-small uk-hidden@s uk-grid-divider" uk-grid>
-                <div class="uk-first-column uk-margin-right">
-                    <diV>
-                        <span uk-icon="icon: mail; ratio:2"></span>
-                        <span>E-MAIL </span>
-                    </div>
-                </div>
-
-                <div>
-                    <a href="mailto:lucasvscs@outlook.com">lucasvscs@outlook.com</a>
-                </div>
-
-                <div>
-                    <span uk-icon="icon: social; ratio:2"></span>
-                    <span>REDES SOCIAIS</span>
-                </div>
-
-                <div>
-                    <a href="https://github.com/LucasVSCS">
-                        <span class="uk-margin-left" uk-icon="icon: github; ratio:1.2"></span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/lucasvscs/">
-                        <span class="uk-margin-left" uk-icon="icon: linkedin; ratio:1.2"></span>
-                    </a>
-                    <a href="#">
-                        <span class="uk-margin-left" uk-icon="icon: whatsapp; ratio:1.2"></span>
-                    </a>
-                    <a href="https://www.instagram.com/lucasvscs/">
-                        <span class="uk-margin-left" uk-icon="icon: instagram; ratio:1.2"></span>
-                    </a>
-                </div>
-
-                <div>
-                    <span uk-icon="icon: receiver; ratio:2"></span>
-                    <span>TELEFONE</span>
-                </div>
-                <div>
-                    <span>(71) 9999-9999</span>
-                </div>
-                <!-- FIM CONTATO MOBILE-->
+          <div class="uk-first-column">
+            <div>
+              <a href="mailto:lucasvscs@outlook.com">lucasvscs@outlook.com</a>
             </div>
+          </div>
+          <div>
+            <a href="https://github.com/LucasVSCS">
+              <span
+                class="uk-margin-left"
+                uk-icon="icon: github; ratio:1.2"
+              ></span>
+            </a>
+            <a href="https://www.linkedin.com/in/lucasvscs/">
+              <span
+                class="uk-margin-left"
+                uk-icon="icon: linkedin; ratio:1.2"
+              ></span>
+            </a>
+
+            <span
+              class="uk-margin-left"
+              uk-icon="icon: whatsapp; ratio:1.2"
+            ></span>
+
+            <a href="https://www.instagram.com/lucasvscs/">
+              <span
+                class="uk-margin-left"
+                uk-icon="icon: instagram; ratio:1.2"
+              ></span>
+            </a>
+          </div>
+          <div>
+            <span>(71) 9999-9999</span>
+          </div>
         </div>
+        <!-- FIM CONTATO DESKTOP-->
+
+        <!-- ================================================================================================================================================================================= -->
+
+        <!--  CONTATO MOBILE    -->
+        <div
+          class="uk-child-width-1-3@s uk-grid-small uk-hidden@s uk-grid-divider"
+          uk-grid
+        >
+          <div class="uk-first-column uk-margin-right">
+            <div>
+              <span uk-icon="icon: mail; ratio:2"></span>
+              <span>E-MAIL </span>
+            </div>
+          </div>
+
+          <div>
+            <a href="mailto:lucasvscs@outlook.com">lucasvscs@outlook.com</a>
+          </div>
+
+          <div>
+            <span uk-icon="icon: social; ratio:2"></span>
+            <span>REDES SOCIAIS</span>
+          </div>
+
+          <div>
+            <a href="https://github.com/LucasVSCS">
+              <span
+                class="uk-margin-left"
+                uk-icon="icon: github; ratio:1.2"
+              ></span>
+            </a>
+            <a href="https://www.linkedin.com/in/lucasvscs/">
+              <span
+                class="uk-margin-left"
+                uk-icon="icon: linkedin; ratio:1.2"
+              ></span>
+            </a>
+            <a href="#">
+              <span
+                class="uk-margin-left"
+                uk-icon="icon: whatsapp; ratio:1.2"
+              ></span>
+            </a>
+            <a href="https://www.instagram.com/lucasvscs/">
+              <span
+                class="uk-margin-left"
+                uk-icon="icon: instagram; ratio:1.2"
+              ></span>
+            </a>
+          </div>
+
+          <div>
+            <span uk-icon="icon: receiver; ratio:2"></span>
+            <span>TELEFONE</span>
+          </div>
+          <div>
+            <span>(71) 9999-9999</span>
+          </div>
+          <!-- FIM CONTATO MOBILE-->
+        </div>
+      </div>
     </div>
     <!-- FIM SEÇÃO | CONTATO -->
 
     <footer>
-        <div id="footer" class="uk-section uk-section-primary uk-section-xsmall uk-text-bold">
-            <div class="uk-container">
-                <div class="uk-margin uk-flex uk-flex-center">
-                    <h4>Lucas VSCS © 2020</h4>
-                </div>
-            </div>
+      <div
+        id="footer"
+        class="uk-section uk-section-primary uk-section-xsmall uk-text-bold"
+      >
+        <div class="uk-container">
+          <div class="uk-margin uk-flex uk-flex-center">
+            <h4>Lucas VSCS © <span id="currentYear"></span></h4>
+          </div>
         </div>
+      </div>
     </footer>
 
     <!-- JAVASCRIPT DA MAIN-->
 
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>
